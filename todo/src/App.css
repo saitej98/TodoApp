@@ -13,135 +13,98 @@
       rgba(100, 115, 255, 1) 100%
     );
   }
-  .todo-app {
+  .App {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 520px;
-    min-height: 600px;
-    background: #161a2b;
-    text-align: center;
-    margin: 128px auto;
-    border-radius: 10px;
-    padding-bottom: 32px;
+    flex-flow: column nowrap;
+    margin-top: 50px;
   }
   
-  h1 {
-    margin: 32px 0;
-    color: #fff;
-    font-size: 24px;
+  .todo {
+    align-self: center;
+    color: white;
   }
   
-  .complete {
+  .todo .crossText {
     text-decoration: line-through;
-    opacity: 0.4;
+    color: red;
   }
   
-  .todo-form {
-    margin-bottom: 32px;
-  }
-  
-  .todo-input {
-    padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
-    outline: none;
-    width: 320px;
+  .todo input {
     background: transparent;
-    color: #fff;
-  }
-  
-  .todo-input::placeholder {
-    color: #e2e2e2;
-  }
-  
-  .todo-button {
-    padding: 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
+    color: black;
+    border-bottom: 5px dashed black;
+    min-width: 400px;
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
+  .todo input::placeholder {
+    color: black;
+    font-size: 1.3rem;
+  }
+  
+  .todo input:focus {
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-    color: #fff;
-    text-transform: capitalize;
+    border: 2px dotted black;
   }
   
-  .todo-input.edit {
-    border: 2px solid #149fff;
-  }
-  
-  .todo-button.edit {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
-    padding: 16px 22px;
-  }
-  
-  .todo-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-  
-  .todo-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px auto;
-    color: #fff;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
-    );
-  
-    padding: 16px;
-    border-radius: 5px;
-    width: 90%;
-  }
-  
-  .todo-row:nth-child(4n + 1) {
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 2) {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 12, 241, 1) 0%,
-      rgba(250, 0, 135, 1) 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 3) {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
-  }
-  
-  .icons {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
+  .todo .add-btn {
+    padding: 10px;
+    border-radius: 30%;
+    color: black;
+    font-size: 1.2rem;
+    background-color: yellow;
+    border: none;
+    margin-left: 10px;
     cursor: pointer;
+    border: 3px solid black;
   }
   
-  .delete-icon {
-    margin-right: 5px;
-    color: #fff;
+  .todo .add-btn:hover {
+    padding: 15px;
+    font-size: 1.5rem;
   }
   
-  .edit-icon {
-    color: #fff;
+  .todo ul {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+  
+  .todo ul li {
+    list-style: none;
+    margin-bottom: 4px;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: -100px;
+    background-color: rgb(236, 236, 236, 0.6);
+    font-family: "Permanent Marker", cursive;
+    color: black;
+  }
+  .todo ul li .delete {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+  
+  .todo ul li .completed {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    margin-left: 10px;
+    color: white;
   }
