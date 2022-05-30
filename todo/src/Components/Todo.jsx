@@ -15,9 +15,9 @@ function Form() {
         value: task,
         isCompleted: false,
       };
-
       setTaskList([...tasklist, taskDetails]);
     }
+    document.getElementById("text").value = "";
   };
 
   const deletetask = (e, id) => {
