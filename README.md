@@ -30,11 +30,7 @@ https://github.com/saitej98/TodoApp
  completed button is  for to show the task completed with red striped line and delete is for to delete the task.
 ---
 
-### How To Use ✅
 
-First you have to have to go to the signup page and create a new account. After the signup process is completed user will redirected to landing page. user can now search courses in seach bar. After that user can sort the courses depend upon the different categories.If user will redirected to the single course page checkout page here user user will able to watch detailed information about that course and if user clicks on Enroll button user redirected to payment page.If user completed his/her payment redirected to confirmation page. 
-
----
 
 ### Tech Stack Used :wrench:
 
